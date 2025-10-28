@@ -1,0 +1,4 @@
+{
+    "fiveServer.root": "${fileDirname}",
+    "fiveServer.port": 5500
+}
