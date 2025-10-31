@@ -31,17 +31,21 @@ body {
 
 }
 
+header{
+background-color: var(--blueBackground);
+}
+
 header, main {
     display:contents;  
 }
 
 #course-title {
+    background-color: var(--blueBackground);
     grid-area: course-title; 
     display: block;
     text-align: right;
     font-family: var(--headingFont);
     font-size: var(--largeFont);
-    background-color: var(--blueBackground);
     color: var(--lightText);
     padding-right: 0 !important;
     align-self: stretch; 
@@ -175,7 +179,7 @@ h3 {
 #flag figcaption{
     font-size: 11px;
     font-style: italic;
-
+}
 
 li a:hover{
     background-color: white;
