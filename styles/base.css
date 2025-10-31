@@ -1,0 +1,187 @@
+:root{
+    --headingFont: "Archivo Black", sans-serif; 
+    --textFont: "EB Garamond"; 
+    --largeFont: 19px; 
+    --smallFont: 16px; 
+    --lightText: white; 
+    --darkText: black; 
+    --blueBackground: rgb(38, 71, 143);
+    --greyBackground: rgb(97, 95, 95);
+
+}
+
+* {
+   margin: 0; 
+   padding: 0; 
+   max-width: 1000px; 
+   box-sizing: border-box; 
+   font-family: var(--textFont);;
+   font-size: var(--smallFont);
+}
+
+body {
+    display: grid; 
+    grid-template: 80px 40px auto 80px / repeat(3, 1fr);
+    grid-template-areas: 
+    
+        "course-title course-title mainTop"
+        "headerLinks headerLinks headerLinks"
+        "card card card"
+        "footer footer footer";
+
+}
+
+header, main {
+    display:contents;  
+}
+
+#course-title {
+    grid-area: course-title; 
+    display: block;
+    text-align: right;
+    font-family: var(--headingFont);
+    font-size: var(--largeFont);
+    background-color: var(--blueBackground);
+    color: var(--lightText);
+    padding-right: 0 !important;
+    align-self: stretch; 
+    justify-self: stretch; 
+    align-content: center;
+}
+
+.headerLinks {
+    grid-area: headerLinks; 
+    background-color: var(--greyBackground);
+    list-style-type: none;
+    display: flex; 
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.mainTop{
+    display: flex; 
+    grid-area: mainTop;
+    background-color: var(--blueBackground); 
+    align-self: stretch; 
+    justify-self: stretch;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.card{
+    display: grid; 
+    grid-template: auto / 3fr auto;
+    border: 1px black solid; 
+    border-radius: 10px;
+}
+
+.gridContainer{
+    grid-area: card; 
+    display: grid; 
+    grid-template: auto / 2fr 1fr;
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.aboutMe{
+    display: grid; 
+    grid-template: 30px auto 30px auto / 1fr 2fr 1fr;
+}
+
+.resources{
+    display: grid; 
+    grid-template: 30px 1fr / 1fr;
+}
+.resources ul{
+    padding-left: 50px;
+    align-content: center; 
+    line-height: 2;
+}
+
+footer{
+    grid-area: footer; 
+    background-color: var(--blueBackground);
+    color: var(--lightText);
+    text-align: center;
+    align-self: stretch;
+    align-content: center; 
+}
+nav a{
+    text-decoration: none;
+    color: var(--lightText); 
+}
+
+html {
+    position: relative; 
+    justify-self: center; 
+
+}
+
+h1 {
+    color: yellow; 
+    font-size: var(--largeFont);
+}
+
+h2, h4 {
+    grid-area: 1/1/2/4;
+    text-align: center;
+    background-color: var(--blueBackground);
+    font-family: var(--largeFont);
+    font-size: var(--largeFont);
+    color: var(--lightText); 
+}
+
+h3 {
+    text-align: center;
+    font-family: var(--largeFont);
+    font-size: var(--largeFont);
+    margin: 0 30px; 
+    border-bottom: 1px black  solid;
+    grid-area: 3/1/4/3
+}
+
+.intro{
+    grid-area: 2/1/3/3; 
+    align-self: center;
+    padding: 20px; 
+    line-height: 1.5;
+}
+
+.location{
+    grid-area: 4/2/5/3; 
+    align-self: center; 
+    padding: 20px; 
+    line-height: 1.5;
+}
+
+#portrait{
+    display: block; 
+    width: 150px;
+    justify-items: center;
+    align-self: center;    
+}
+#flag{
+
+    grid-area: 4/1/5/2;
+   margin: 10px; 
+   align-self: center;
+}
+
+#flag img{
+    width:150px;
+}
+
+#flag figcaption{
+    font-size: 11px;
+    font-style: italic;
+
+
+li a:hover{
+    background-color: white;
+    border-radius: 5px; 
+    color: green; 
+    padding: 5px; 
+    font-weight: bolder;
+    font-size: var(--largeFont);
+}
