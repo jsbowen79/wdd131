@@ -32,11 +32,10 @@ body {
 }
 
 header{
-background-color: var(--blueBackground);
-color: var(--lightText);
+display: contents; 
 }
 
-header, main {
+main {
     display:contents;  
 }
 
@@ -48,7 +47,7 @@ header, main {
     text-align: right;
     font-family: var(--headingFont);
     font-size: var(--largeFont);
-    padding-right: 0 !important;
+    padding-right: 0;
     align-self: stretch; 
     justify-self: stretch; 
     align-content: center;
@@ -69,11 +68,13 @@ header, main {
     display: flex; 
     grid-area: mainTop;
     background-color: var(--blueBackground); 
-    color: var(--lightText);
+    color: yellow;
+    font-size: var(--largeFont);
     align-self: stretch; 
     justify-self: stretch;
     align-items: center;
     padding-left: 3px;
+    font-weight: 500;
 }
 
 .card{
@@ -125,11 +126,6 @@ html {
 
 }
 
-h1 {
-    color: yellow; 
-    font-size: var(--largeFont);
-}
-
 h2, h4 {
     grid-area: 1/1/2/4;
     text-align: center;
@@ -137,6 +133,7 @@ h2, h4 {
     color: var(--lightText); 
     font-family: var(--largeFont);
     font-size: var(--largeFont);
+    font-weight: 200;
 }
 
 h3 {
