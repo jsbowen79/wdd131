@@ -41,12 +41,12 @@ header, main {
 
 #course-title {
     background-color: var(--blueBackground);
+    color: var(--lightText);
     grid-area: course-title; 
     display: block;
     text-align: right;
     font-family: var(--headingFont);
     font-size: var(--largeFont);
-    color: var(--lightText);
     padding-right: 0 !important;
     align-self: stretch; 
     justify-self: stretch; 
@@ -56,6 +56,7 @@ header, main {
 .headerLinks {
     grid-area: headerLinks; 
     background-color: var(--greyBackground);
+    color: var(--lightText);
     list-style-type: none;
     display: flex; 
     justify-content: space-around;
@@ -67,6 +68,7 @@ header, main {
     display: flex; 
     grid-area: mainTop;
     background-color: var(--blueBackground); 
+    color: var(--lightText);
     align-self: stretch; 
     justify-self: stretch;
     align-items: center;
@@ -131,9 +133,9 @@ h2, h4 {
     grid-area: 1/1/2/4;
     text-align: center;
     background-color: var(--blueBackground);
+    color: var(--lightText); 
     font-family: var(--largeFont);
     font-size: var(--largeFont);
-    color: var(--lightText); 
 }
 
 h3 {
