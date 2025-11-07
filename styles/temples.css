@@ -68,6 +68,11 @@ footer p{
     font-size: 1.25rem;
 }
 
+.navigation a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
 @media (max-width: 450px) {
 
     figure img{
@@ -83,12 +88,15 @@ main{
 }
 
 #menu{
+    display: block; 
     font-family: var(--headingFont);
     font-size: 1rem;
     position: absolute; 
     top: 20px; 
     right: 20px; 
     z-index: 1001;
+    background: none; 
+    border: none; 
 }
 
 #menu::before {
@@ -108,22 +116,16 @@ main{
     width: 25%;
     align-items: center;
     list-style: none;
-    background-color: aquamarine;
+    background-color:cornsilk ;
     transition: right 0.3s ease;
     z-index: 1000;
+    border-radius: 10px; 
+
 }
 
 
 .navigation.open {
-    right: 0;
-  
+    right: 0;  
 }
-
-
-.navigation a:hover {
-    background-color: #7fffd4;
    
-}
-
-
 }
