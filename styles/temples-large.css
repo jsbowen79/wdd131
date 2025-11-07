@@ -14,11 +14,13 @@ header{
 }
 
 nav{
+    display: flex; 
     grid-area: 1/2/2/3; 
 }
 
 .navigation {
     all: initial; 
+    width: 100%;
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
