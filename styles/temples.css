@@ -12,10 +12,6 @@
     box-sizing: border-box;
 }
 
-#menu{
-    display: none; 
-}
-
 header{
     display: block; 
     font-family: var(--headingFont);
@@ -39,7 +35,6 @@ figcaption{
 }
 
 p{
-    /* color: var(--alternateText); */
     font-size: 2.0rem;
     padding: var(--smallPadding);
 }
@@ -55,6 +50,22 @@ footer p{
     font-size: 16px;
     text-align: center;
     width: 100%; 
+}
+
+.navigation {
+    list-style: none; 
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 60px;
+    right: -25%;
+    width: 25%;
+    align-items: center;
+    background-color:cornsilk ;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    border-radius: 10px; 
+
 }
 
 .navigation a {
@@ -73,9 +84,7 @@ footer p{
     color: white;
 }
 
-@media (max-width: 450px) {
-
-    figure img{
+figure img{
         width: 100%;
         margin: 0 auto;  
     }
@@ -107,25 +116,8 @@ main{
     content: "❌"; 
 }
 
-.navigation {
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    top: 60px;
-    right: -25%;
-    width: 25%;
-    align-items: center;
-    list-style: none;
-    background-color:cornsilk ;
-    transition: right 0.3s ease;
-    z-index: 1000;
-    border-radius: 10px; 
-
-}
 
 
 .navigation.open {
     right: 0;  
-}
-   
 }
