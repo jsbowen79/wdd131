@@ -1,0 +1,129 @@
+:root{
+    --cursiveFont: "Edu NSW ACT Cursive", cursive; 
+    --headingFont: "EB Garamond", Serif; 
+    --standardPadding: 20px;
+    --smallPadding:10px;  
+    --alternateText: #ffffff;
+}
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+#menu{
+    display: none; 
+}
+
+header{
+    display: block; 
+    font-family: var(--headingFont);
+    background-color:aquamarine; 
+    font-weight: 550;
+}
+
+h1{
+    text-align: center; 
+    font-family: var(--headingFont);
+    margin-bottom:20px;
+}
+
+
+figcaption{
+    font-family: var(--cursiveFont); 
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: var(--standardPadding); 
+    
+}
+
+p{
+    /* color: var(--alternateText); */
+    font-size: 2.0rem;
+    padding: var(--smallPadding);
+}
+
+body{
+    width: 100%;
+    margin: 0 auto; 
+    padding: var(--smallPadding);
+}
+
+footer p{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    text-align: center;
+    width: 100%; 
+}
+
+.navigation a {
+    display: block;
+    padding: var(--smallPadding) 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: var(--headingFont);
+    font-size: 1.25rem;
+}
+
+@media (max-width: 450px) {
+
+    figure img{
+        width: 100%;
+        margin: 0 auto;  
+    }
+
+main{
+    display: block; 
+    width: 100%; 
+    padding: var(--smallPadding); 
+    margin: 0 auto; 
+}
+
+#menu{
+    font-family: var(--headingFont);
+    font-size: 1rem;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1001;
+}
+
+#menu::before {
+    content : "☰"; 
+}
+
+#menu.open::before {
+    content: "❌"; 
+}
+
+.navigation {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 60px;
+    right: -25%;
+    width: 25%;
+    align-items: center;
+    list-style: none;
+    background-color: aquamarine;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+
+.navigation.open {
+    right: 0;
+  
+}
+
+
+.navigation a:hover {
+    background-color: #7fffd4;
+   
+}
+
+
+}
