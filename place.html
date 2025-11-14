@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Spot</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <meta name="description" content="A place that I would like to go on vacation.">
+    <meta name="author" content="Joseph Bowen">
+</head>
+<body>
+    <main>
+        <h1>Hawaii, USA</h1>
+        <picture>
+            <source srcset="images/hawaii-small.webp" media="screen and (max-width: 800px)">
+            <img src="images/hawaii.webp" alt="A picture of a sunset in Hawaii" width="1000" height="666">
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <ul class="left">               
+                <li>Area:</li>
+                <li>Population:</li>
+                <li>Capital:</li>
+                <li>Languages:</li>
+                <li>Currency:</li>
+                <li>Time Zone:</li>
+                <li>Calling Code:</li>
+                <li>Internet TLD:</li>
+            </ul>
+            <ul class="right">
+                <li>10,931 sq. miles</li>
+                <li>1.45 million</li>
+                <li>Honolulu</li>
+                <li>English, Hawaiian</li>
+                <li>US Dollar $</li>
+                <li>UTC - 10</li>
+                <li>1(808)</li>
+                <li>.us</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h3>Weather</h3>
+            <div class="icon">
+                <img src="images/sunny.svg" class="mobile-icon" alt="A shining sun indicating good weather">
+
+            </div>
+            <ul class="left">    
+                <li>Temperature:</li>
+                <li>Conditions:</li>
+                <li>Wind:</li>
+                <li>WindChill:</li>
+            </ul class>
+            <ul class="right">
+                <li id="temp">85° F</li>
+                <li>Sunny</li>
+                <li id="speed">10 mph S/SW</li>
+                <li id="windchill"></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🥋 Joseph Bowen 🥋 Colorado, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
