@@ -28,9 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
         
     function calculateWindChill() {
 
-    const windChill = 35.74 + (0.6215 * temp) - 35.75 * (speed ** 0.16) + (.4275 * temp) * (speed ** 0.16)
-    stringWindchill = windChill.toFixed(1) + "° F";
-    return stringWindchill;
+        return stringWindChill = (35.74 + (0.6215 * temp) - 35.75 * (speed ** 0.16) + (.4275 * temp) * (speed ** 0.16)).toFixed(1) + "° F";
+
     }
     
     if (temp <= 50 && speed > 3) {
