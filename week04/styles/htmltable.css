@@ -1,0 +1,39 @@
+th{
+    font-size: 2rem;
+}
+
+td, th{
+    padding: 5px;
+    border: 1px black solid; 
+}
+
+.dark{
+    background-color: black;
+    color: white; 
+}
+
+.light{
+    background-color: rgb(97, 95, 95);
+    color: white; 
+}
+td{
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(179, 177, 177);
+}
+
+caption {
+    caption-side: bottom;
+}
+
+table{
+    border: 1px black solid; 
+    border-collapse: collapse; 
+
+}
+tbody {
+    border: 1px black solid; 
+   
+}

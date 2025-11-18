@@ -1,0 +1,198 @@
+:root{
+    --cursiveFont: "Edu NSW ACT Cursive", cursive; 
+    --headingFont: "EB Garamond", Serif; 
+    --standardPadding: 20px;
+    --smallPadding:10px; 
+    --smallerPadding: 5px;  
+    --alternateText: #ffffff;
+}
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+header{
+    display: block; 
+    font-family: var(--headingFont);
+    background-color:aquamarine; 
+    font-weight: 550;
+}
+
+h1{
+    text-align: center; 
+    font-family: var(--headingFont);
+    margin-bottom:20px;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: var(--cursiveFont);
+    text-align: center;
+}
+
+header p {
+    font-size: 2rem;
+
+}
+
+p{
+    font-size: .8rem;
+    padding: var(--smallerPadding);
+    text-align: center;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto; 
+    padding: var(--smallPadding);
+    font-display: swap;
+}
+
+.card{
+    background-color: rgb(172, 178, 184);
+    margin: var(--smallPadding);
+    border-radius: 10px;
+    padding: var(--smallPadding);
+    overflow: hidden; 
+}
+
+footer p{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    text-align: center;
+    width: 100%; 
+}
+
+.navigation {
+    list-style: none; 
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 60px;
+    right: -25%;
+    width: 25%;
+    align-items: center;
+    background-color:cornsilk ;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    border-radius: 10px; 
+
+}
+
+.navigation a {
+    display: block;
+    padding: var(--smallPadding) 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: var(--headingFont);
+    font-size: 1.25rem;
+}
+
+.navigation a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+img{
+    display: block;
+    justify-self: center;
+    align-self: center;      
+    width: 90%;
+    box-shadow: 4px 4px 4px 4px grey;
+    margin: 0 auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    }
+
+main{
+    display: block; 
+    width: 100%; 
+    padding: var(--smallPadding); 
+    margin: 0 auto; 
+}
+
+#menu{
+    display: block; 
+    font-family: var(--headingFont);
+    font-size: 1rem;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1001;
+    background: none; 
+    border: none; 
+}
+
+#menu::before {
+    content : "☰"; 
+}
+
+#menu.open::before {
+    content: "❌"; 
+}
+
+
+
+.navigation.open {
+    right: 0;  
+}
+
+@media (min-width: 940px) {
+
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--smallPadding);
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        display: flex;
+        grid-area: 1/2/2/3;
+    }
+
+    .navigation {
+        all: initial;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    h1 {
+        grid-area: 1/1/2/4;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2.0rem;
+    }
+
+    .card {
+        display: block;
+    } 
+    
+    .navigation a.active::before{
+        content: "✅"; 
+    }
+ }

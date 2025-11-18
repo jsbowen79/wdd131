@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+    <meta name="description" content="A demonstration of the lazy load feature of web browsers">
+    <meta author="Joseph Bowen">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <h1>Lazy Load Demonstration</h1>
+        <div class="image-wrapper">
+            <img src="images/denver-temple.jpg" loading="lazy" alt="The Denver Temple">
+            <img src="images/flag.jpg" loading="lazy" alt="The flag of the United States">
+            <img src="images/hawaii-small.webp" alt="A picture of Hawaii" loading="lazy">
+            <img src="images/hero-large.webp" alt="A picture of a temple" loading="lazy">
+            <img src="images/profile.webp" alt="A picture of Joseph Bowen" loading="lazy">
+            <img src="images/hawaii.webp" alt="A picture of Hawaii" loading="lazy">
+        </div>
+    </main>
+</body>
+<footer>
+    <p>©<span id="currentyear"></span> 🥋 Joseph Bowen 🥋 Colorado, USA</p>
+    <p id="lastModified"></p>
+</footer>
+</html>

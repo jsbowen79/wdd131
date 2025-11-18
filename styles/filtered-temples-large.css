@@ -1,0 +1,52 @@
+@media (min-width: 451px){
+    
+main{
+    width: 80%; 
+    margin: 0 auto;  
+}
+
+.cards{
+display: grid; 
+grid-template-columns: repeat(3, 1fr);
+gap: var(--smallPadding); 
+}
+
+header{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+nav{
+    display: flex; 
+    grid-area: 1/2/2/3; 
+}
+
+.navigation {
+    all: initial; 
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; 
+    height: 100%; 
+}
+
+#menu{
+    display: none; 
+}
+
+h1{
+    grid-area: 1/1/2/4;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.0rem;
+}
+
+.card{
+    display: block;
+}
+
+}
