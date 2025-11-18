@@ -34,7 +34,7 @@ h2{
 
 header p {
     font-size: 2rem;
-
+    
 }
 
 p{
@@ -78,7 +78,7 @@ footer p{
     transition: right 0.3s ease;
     z-index: 1000;
     border-radius: 10px; 
-
+    
 }
 
 .navigation a {
@@ -106,7 +106,7 @@ img{
     margin: 0 auto;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    }
+}
 
 main{
     display: block; 
@@ -136,6 +136,9 @@ main{
 }
 
 
+.navigation a.active::before{
+    content: "✅"; 
+}
 
 .navigation.open {
     right: 0;  
@@ -192,7 +195,4 @@ main{
         display: block;
     } 
     
-    .navigation a.active::before{
-        content: "✅"; 
-    }
  }
