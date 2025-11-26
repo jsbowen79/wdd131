@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,74 +12,73 @@
     <script src="scripts/form.js" defer></script>
 
 </head>
-<nav class="control">
-<body>
- 
-    <header>
-        <h1>Product Review</h1>
-    </header>
-    <form action="review.html" method="get">
-        
-        <label for="productName">Product Name</label>
-        <select name="name" id="productName" required>
-            <option value="Select a Product" disabled selected>Select a Product</option>
-        </select>
-        <div class="rate">
-            <h2>Overall Rating</h2>
-            <div id="userRating">
-                <input type="radio" id="star5" name="rating" value="5" required>
-                <label for="star5">&#9733;</label>
-            
-                <input type="radio" id="star4" name="rating" value="4" required>
-                <label for="star4">&#9733;</label>
-            
-                <input type="radio" id="star3" name="rating" value="3" required>
-                <label for="star3">&#9733;</label>
-            
-                <input type="radio" id="star2" name="rating" value="2" required>
-                <label for="star2">&#9733;</label>
-            
-                <input type="radio" id="star1" name="rating" value="1" required>
-                <label for="star1">&#9733;</label>
-            </div>
-        </div>
-        
-        <label for="date">Date of Installation</label>
-        <input type="date" id="date" name="date" required>
-        <div class="features">
-            <h3>Which features did you find useful in the product?</h3> 
-            <p>(check all that apply)</p>
-            <div>
-                <input type="checkbox" name="features" id="durability" value="durability">
-                <label for="durability">Durability</label>
-            </div>
-            <div>
-                <input type="checkbox" name="features" id="ease" value="ease">
-                <label for="ease">Ease Of Use</label>
-            </div>
-            <div>
-                <input type="checkbox" name="features" id="performance" value="performance">
-                <label for="performance">Performance</label>
-            </div>
-            <div>
-                <input type="checkbox" name="features" id="design" value="design">
-                <label for="design">Design</label>
-            </div>
-        </div>
-        <label for="review">Written Review (optional)</label>
-        <textarea id="review" name="review" placeholder="Please enter any comments here."></textarea>
 
-        <label for="name">Your name (optional)</label>
-        <input type="text" id="name" name="name" placeholder="Please enter your name">
+    <body>
+    
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <form action="review.html" method="get">
+            
+            <label for="productName">Product Name</label>
+            <select name="name" id="productName" required>
+                <option value="Select a Product" disabled selected>Select a Product</option>
+            </select>
+            <div class="rate">
+                <h2>Overall Rating</h2>
+                <div id="userRating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">&#9733;</label>
+                
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">&#9733;</label>
+                
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">&#9733;</label>
+                
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">&#9733;</label>
+                
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">&#9733;</label>
+                </div>
+            </div>
+            
+            <label for="date">Date of Installation</label>
+            <input type="date" id="date" name="date" required>
+            <div class="features">
+                <h3>Which features did you find useful in the product?</h3> 
+                <p>(check all that apply)</p>
+                <div>
+                    <input type="checkbox" name="features" id="durability" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" id="ease" value="ease">
+                    <label for="ease">Ease Of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" id="performance" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" id="design" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+            <label for="review">Written Review (optional)</label>
+            <textarea id="review" name="review" placeholder="Please enter any comments here."></textarea>
 
-        <label><input type="submit" value="Send My Review" id="submit-button"></label> 
+            <label for="name">Your name (optional)</label>
+            <input type="text" id="name" name="name" placeholder="Please enter your name">
 
-    </form>
-    <footer>
-        <p>©<span id="currentyear"></span> 🥋 Joseph Bowen 🥋 Colorado, USA</p>
-        <p id="lastModified"></p>
-    </footer>
- 
-</body>
-</nav>
+            <input type="submit" value="Send My Review" id="submit-button"> 
+
+        </form>
+        <footer>
+            <p>©<span id="currentyear"></span> 🥋 Joseph Bowen 🥋 Colorado, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    
+    </body>
 </html>
