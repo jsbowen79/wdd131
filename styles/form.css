@@ -24,7 +24,27 @@ h1{
     border-radius: 6px;
 }
 
-label[for="productName"], h2, h3, label[for="date"], label[for='review'], label[for='name'] {
+select[name="name"], #userRating label, input[type=date]{
+    border-bottom: 8px solid red; 
+}
+
+.notice{
+    font-size: 1.5rem;
+    color: red; 
+}
+
+select[name="name"]:valid,
+#userRating:has(input:checked) label,
+input[type=date]:valid {
+    border-bottom: 8px solid green;
+}
+
+label[for="productName"], 
+h2, 
+h3, 
+label[for="date"], 
+label[for='review'], 
+label[for='name'] {
     display: block; 
     font-size: 1.6rem;
     font-weight: bold;
