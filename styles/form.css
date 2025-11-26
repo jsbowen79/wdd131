@@ -1,0 +1,122 @@
+:root{
+    --betweenElements: 25px;
+    --standardPadding: 8px;  
+    --largePadding: 16px; 
+}
+
+*{
+    font-size: 1.3rem;
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    background-color: aqua;
+    font-size: 2rem;
+    padding: var(--largePadding);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+h2, h3, h4, label[for="date"], label[for='review'], label[for='name'] {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: var(--largePadding); 
+    margin: 0; 
+    
+}
+#name, #date, #review, #productName{
+    width: 95%;
+    font-size: .9rem;
+    padding: var(--standardPadding); 
+ }
+
+ #review{
+    height: 150px; 
+ }
+
+form {
+    background-color: lightgrey;
+    border: 2px solid black; 
+    border-radius: 6px;
+    margin: var(--standardPadding) 0; 
+    padding: var(--largePadding)
+}
+
+.features div label{
+    font-size: 1.1rem;
+    padding-left: var(--standardPadding);
+}
+
+input[type="checkbox"]{
+    transform: scale(1.8);
+    margin-left: var(--largePadding); 
+}
+
+.features div{
+    display: flex; 
+}
+
+#userRating{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+}
+
+#userRating input{
+   display: none; 
+}
+
+#userRating label{
+    font-size: 2rem;
+    color: #aaa; 
+    cursor: pointer; 
+}
+
+#userRating label:hover, 
+#userRating label:hover~label
+{
+    color:gold; 
+}
+
+#userRating input:checked~label{
+    color: gold; 
+}
+
+footer{
+    background-color: aqua;
+    border: 2px solid black; 
+    border-radius: 6px;
+}
+
+footer p, span{
+    font-size: .8rem;
+    text-align: center;
+    padding: 0;
+    margin: 0
+
+}
+
+input[type="submit"]{
+    display: block; 
+    margin: 0 auto; 
+    background-color: aqua;
+    margin-bottom: var(--largePadding);
+    border: 4px solid black; 
+    border-radius: 10px;
+    margin-top: var(--largePadding); 
+}
+
+input[type="submit"]:hover{
+    height: 50px; 
+    background-color: green;
+}
