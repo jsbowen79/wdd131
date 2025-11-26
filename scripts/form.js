@@ -50,9 +50,7 @@ if (productSelectEl) {
         optionEl = document.createElement("option");
         optionEl.textContent = product.name; 
         optionEl.value = product.id;
-        // optionLabelEl = document.createElement('label'); 
-        // optionLabelEl.for = "productName"; 
-        // optionLabelEl.
+
 
         productSelectEl.appendChild(optionEl); 
     }
