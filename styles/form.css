@@ -5,16 +5,23 @@
 }
 
 *{
-    font-size: 1.3rem;
     padding: 0; 
     margin: 0; 
     box-sizing: border-box;
 }
 
+html, body{
+    width: 100%; 
+    font-size: 1.3rem;
+    overflow-x: auto; 
+}
 
-body{
-    max-width: 500px;
+.control{
+    min-width: 350px;
+    max-width: 650px; 
+    width: auto;
     margin: 0 auto;
+
 }
 
 h1{
@@ -34,7 +41,8 @@ label[for="productName"], h2, h3, label[for="date"], label[for='review'], label[
     
 }
 #name, #date, #review, #productName{
-    width: 95%;
+    min-width: 95%;
+    width: auto; 
     font-size: .9rem;
     padding: var(--standardPadding); 
  }
@@ -63,12 +71,14 @@ input[type="checkbox"]{
 
 .features div{
     display: flex; 
+    flex-shrink: 0;
 }
 
 #userRating{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    flex-shrink: 0;
 
 }
 
@@ -120,3 +130,12 @@ input[type="submit"]:hover{
     height: 50px; 
     background-color: green;
 }
+
+@media (min-width: 800px){
+    .control {
+        max-width: none; 
+        width: 750px; 
+        margin: 0 auto;
+    }
+}
+    
