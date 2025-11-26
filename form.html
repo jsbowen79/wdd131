@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" value="This page provides a form to be completed to review a product.">
-    <meta name="author" value="Joseph Bowen">
+    <meta name="description" content="This page provides a form to be completed to review a product.">
+    <meta name="author" content="Joseph Bowen">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 
 </head>
 <body>
     <h1>Product Review</h1>
-    <form action="review.html" method="get" required>
-        <h2>Product Name</h2>
-        <label><select name="name" id="productName"></label>
+    <form action="review.html" method="get">
+        
+        <label for="productName">Product Name</label>
+        <select name="name" id="productName">
             <option value="" disabled selected>Choose a Product</option>
         </select>
         <div class="rate">
-            <h3>Overall Rating</h3>
+            <h2>Overall Rating</h2>
             <div id="userRating">
                 <input type="radio" id="star5" name="rating" value="5">
                 <label for="star5">&#9733;</label>
@@ -40,7 +41,7 @@
         <label for="date">Date of Installation</label>
         <input type="date" id="date" name="date" required>
         <div class="features">
-            <h4>Which features did you find useful in the product?</h4> 
+            <h3>Which features did you find useful in the product?</h3> 
             <p>(check all that apply)</p>
             <div>
                 <input type="checkbox" name="features" id="durability" value="durability">
@@ -60,7 +61,7 @@
             </div>
         </div>
         <label for="review">Written Review (optional)</label>
-        <input type="textarea" id="review" name="review" placeholder="Please enter any comments here.">
+        <textarea id="review" name="review" placeholder="Please enter any comments here."></textarea>
 
         <label for="name">Your name (optional)</label>
         <input type="text" id="name" name="name" placeholder="Please enter your name">
