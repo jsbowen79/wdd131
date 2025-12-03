@@ -30,8 +30,10 @@ select[name="name"], #userRating label, input[type=date]{
 
 .notice{
     font-size: 1.5rem;
-    color: red; 
+    color: #860404;
+
 }
+
 
 select[name="name"]:valid,
 #userRating:has(input:checked) label,
@@ -78,7 +80,6 @@ form {
 
 input[type="checkbox"]{
     width: 20px;
-    /* height: 20px;  */
     padding: var(--standardPadding);
     margin-left: var(--largePadding); 
 }
@@ -102,7 +103,7 @@ input[type="checkbox"]{
 
 #userRating label{
     font-size: 2rem;
-    color: #aaa; 
+    color: #5c5b5b; 
     cursor: pointer; 
 }
 
