@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor's Edge Budgeting Quiz</title>
+    <meta name="description" content="Quizzes users about their budgeting knowledge.">
+    <meta name="author" content="Joseph Bowen">
+    <link rel="stylesheet" href="styles/razorsEdge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="scripts/quiz.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/newRazorsEdgeLogo.jpg" alt="Razor's Edge Budgeting Education Logo">
+        <h1>Razor's Edge Budgeting Quiz</h1>
+        <p>Managing finances to avoid life on the Razor's Edge</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="budget.html">Create Budget</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </header>
+    <main>
+
+        <div class="intro">
+            <h2>Welcome to Razor's Edge Budgeting Quiz</h2>
+            <p>Test Your Knowledge with</p>
+            <p class="bold"> Razor's Edge</p>
+        </div>
+        <div class="firstCol">
+            <h3>Budgeting Quiz</h3>
+            <form>
+                <p class="question">1. What is the main purpose of a budget?</p>
+                <div class="q1Group">
+                    <label for="q1a1">A. Track Spending</label>
+                    <input type="radio" id="q1a1" name="q1">
+                    <label for="q1a2">B. Plan how to use your money</label>
+                    <input type="radio" id="q1a2" name="q1">
+                    <label for="q1a3">C. Avoid bills</label>
+                    <input type="radio" id="q1a3" name="q1">
+                    <label for="q1a4">D. Make investing easier</label>
+                    <input type="radio" id="q1a4" name="q1">
+                </div>
+                <p class="question">Which of these should be considered a fixed expense?</p>
+                <div class="q2Group">
+                    <label for="q2a1">A. Groceries</label>
+                    <input type="radio" id="q2a1" name="q2">
+                    <label for="q2a2">B. Rent or Mortgage</label>
+                    <input type="radio" id="q2a2" name="q2">
+                    <label for="q2a3">C. Gasoline</label>
+                    <input type="radio" id="q2a3" name="q2">
+                    <label for="q2a4">D. Eating Out</label>
+                    <input type="radio" id="q2a4" name="q2">
+                </div>
+                <p class="question">Your emergency fund should ideally cover 3-6 months of expenses.</p>
+                <div class="q3Group">
+                    <label for="q3a1">True</label>
+                    <input type="radio" id="q3a1" name="q3">
+                    <label for="q3a2">False</label>
+                    <input type="radio" id="q3a2" name="q3">
+                </div>
+                <p class="question">Which of the following is a variable expense?</p>
+                <div class="q4Group">
+                    <label for="q4a1">A. Car Payment</label>
+                    <input type="radio" id="q4a1" name="q4">
+                    <label for="q4a2">B. Health Insurance</label>
+                    <input type="radio" id="q4a2" name="q4">
+                    <label for="q4a3">C. Movie Tickets</label>
+                    <input type="radio" id="q4a3" name="q4">
+                    <label for="q4a4">D. Internet Bill</label>
+                    <input type="radio" id="q4a4" name="q4">
+                </div>
+                <p class="question">Which budgeting method uses categories like "Needs," "Wants," and "Savings?"</p>
+                <div class="q5Group">
+                    <label for="q5a1">A. Zero-based Budgeting</label>
+                    <input type="radio" id="q5a1" name="q5">
+                    <label for="q5a2">B. $50/30/20 rule</label>
+                    <input type="radio" id="q5a2" name="q5">
+                    <label for="q5a3">C. Envelope System</label>
+                    <input type="radio" id="q5a3" name="q5">
+                    <label for="q5a4">D. Reverse Budgeting</label>
+                    <input type="radio" id="q5a4" name="q5">
+                </div>
+                <p class="question">Small, everyday purchases usually don't matter when budgeting.</p>
+                <div class="q6Group">
+                    <label for="q6a1">True</label>
+                    <input type="radio" id="q6a1" name="q6">
+                    <label for="q6a2">False</label>
+                    <input type="radio" id="q6a2" name="q6">                    
+                </div>
+            </form>
+
+        </div>
+        <div class="secondCol">
+            <h5 class="quiz">Answers</h5>
+            <div id="a1"></div>
+            <div id="a2"></div>
+            <div id="a3"></div>
+            <div id="a4"></div>
+            <div id="a5"></div>
+            <div id="a6"></div>
+            <div id="message"></div>
+            
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🥋 Joseph Bowen 🥋 Colorado, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

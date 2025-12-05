@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor's Edge Budget Tool</title>
+    <meta name="description" content="Allows users to build an interactive budget.">
+    <meta name="author" content="Joseph Bowen">
+    <link rel="stylesheet" href="styles/razorsEdge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="scripts/budget.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/newRazorsEdgeLogo.jpg" alt="Razor's Edge Budgeting Education Logo">
+        <h1>Razor's Edge Budget Tool</h1>
+        <p>Managing finances to avoid life on the Razor's Edge</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="budget.html">Create Budget</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </header>
+    <main>
+
+        <div class="intro">
+            <h2>Welcome to Razor's Edge Budget Tool</h2>
+            <p>Create a Budget with</p>
+            <p class="bold"> Razor's Edge</p>
+        </div>
+        <div class="firstCol">
+            <h3>Income</h3>
+            <form class="budget">
+                <label for="wages">Net Salary or Wages</label>
+                <input type="number" id="wages" name="wages" step="0.01" value="0">
+
+                <label for="invest">Net Investment Income</label>
+                <input type="number" id="invest" name="invest" step="0.01" value="0">
+
+                <label for="rental">Net Rental Income</label>
+                <input type="number" id="rental" name="rental" step=".01" value="0">
+
+                <label for="benefits">Net Government or other Benefits</label>
+                <input type="number" name="benefits" id="benefits" step="0.01" value="0">
+
+                <label for="retire">Net Retirement Income</label>
+                <input type="number" name="retire" id="retire" step="0.01" value="0">
+
+                <label for="gift">Gifts</label>
+                <input type="number" name="gift" id="gift" step="0.01" value="0">
+
+                <label for="unknownIncome">Add your own Income Category</label>
+                <input type="text" name="unknownIncome" id="unknownIncome">
+                <div id="addIncome"></div>
+
+                <div class="budgetBottom">
+                    <p>Income SubTotal: <span id="incomeSub"></span></p>
+                </div>
+                <Div class="totalRow">
+                   <p>Total: <span id="total"></span></p>
+                </Div>
+                <label for="incomeSubmit">Enter Your Changes</label>
+                <input type="button" id="incomeSubmit" name="incomeSubmit" value="Add Income Category">
+
+                
+            </form>
+
+        </div>
+        <div class="secondColBudget">
+            <h4 class="secondColBudget">Expenses</h4>
+            <form class="budget">
+                <label for="rent">Mortgage or Rent amount:</label>
+                <input type="number" step="0.01" id="rent" name="rent" value="0">
+
+                <label for="transportation">Transportation</label>
+                <input type="number" id="transportation" name="transportation" value="0" step="0.01">
+
+                <label for="food">Food\Dining</label>
+                <input type="number" id="food" name="food" step="0.01" value="0">
+
+                <label for="insurance">Insurance</label>
+                <input type="number" id="insurance" name="insurance" step=".01" value="0">
+
+                <label for="health">Healthcare</label>
+                <input type="number" name="health" id="health" step="0.01" value="0">
+
+                <label for="utilities">Utilities</label>
+                <input type="number" name="utilities" id="utilities" step="0.01" value="0">
+
+                <label for="debt">Debt Repayment</label>
+                <input type="number" name="debt" id="debt" step="0.01" value="0">
+
+                <label for="entertainment">Entertainment</label>
+                <input type="number" name="entertainment" id="entertainment" step="0.01" value="0">
+
+                <label for="care">Personal Care \ Clothing</label>
+                <input type="number" name="care" id="care" step="0.01" value="0">
+
+                <label for="childcare">Childcare</label>
+                <input type="number" name="childcare" id="childcare" step="0.01" value="0">
+                <div id="addExpense"></div>
+
+                <label for="unknown">Add your own Expense Category</label>
+                <input type="text" name="unknown" id="unknown">
+
+
+
+                <div class="budgetBottom">
+                    <p class="budgetP">Expense Subtotal: <span id="expenseSub"></span></p>
+                    <div class="smallTotalRow">
+                        <p class="budgetP">Total: <span id="smallTotal"></span></p>
+                    </div>
+                    <input type="button" id="submitExpense" name="submitExpense" value="Add Expense Category">
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🥋 Joseph Bowen 🥋 Colorado, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

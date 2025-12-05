@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor's Edge Budgeting Education</title>
+    <meta name="description" content="Provides users with education about finances and budgeting.">
+    <meta name="author" content="Joseph Bowen">
+    <link rel="stylesheet" href="styles/razorsEdge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/newRazorsEdgeLogo.jpg" alt="Razor's Edge Budgeting Education Logo">
+        <h1>Razor's Edge Budgeting Education</h1>
+        <p>Managing finances to avoid life on the Razor's Edge</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="budget.html">Create Budget</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </header>
+    <main>
+
+        <div class="intro">
+            <h2>Welcome to Razor's Edge Budgeting Education</h2>
+            <p>Learn how to SLASH your debt with the</p>
+            <p class="bold"> Razor's Edge</p>
+        </div>
+        <div class="firstCol">
+            <h3>Budgeting</h3>
+            <p class="question">What is budgeting?</p>
+            <p class="answer">Put simply, budgeting is dividing your income 
+                into chunks reserved for a particular purpose.</p>
+                <a href="https://consumer.gov/your-money/making-budget" target="_blank" rel="noopener noreferrer">
+                    Click here to learn more about Budgets 
+                </a>
+                <p class="question">What are the benefits of budgeting? </p>
+                <ul class="answer">
+                    <li>Gain Power over your money
+                        <p>Budgets show where your money is going and allow
+                            you to make more informed decisions about your spending.
+                        </p></li>
+                        <li>Planning for the Future
+                            <p>Budgeting allows you to control how much money you spend on 
+                                individual expenses which allows you to reserve money for 
+                                specific purposes such as retirement, paying off debt, 
+                                purchasing a home, or establishing an emergency fund.  
+                            </p>
+                        </li>
+                        <li>Manage Spending
+                            <p>Budgets highlight "needs" versus "wants" and help you to control
+                                wasteful and discretionary spending.
+                            </p>
+                        </li>
+                        <li>Financial Stability
+                            <p>Knowing how much money you have and how much you can spend helps
+                                prevent overspending and provides financial stability.
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="
+                    https://www.thrivent.com/insights/budgeting-saving/why-budgeting-is-important-5-key-benefits" 
+                    target="_blank" rel="noopener noreferrer">Click here to learn more about the benefits of budgeting
+                </a>
+                <p class="question">How do I start budgeting?</p>
+                <p class="question">It's Easy!</p>
+                <ol>
+                    <li>List all of your income sources in one column</li>
+                    <li>List all of your bills in another column</li>  
+                    <li>Total each column separately</li> 
+                    <li>Calculate: Total income - Total Bills = Net Income</li>
+                    <li>Divide Net Income into appropriate groups </li>
+                    <li>Keep spending within allotted amounts for each category </li>
+                    <li>Done!</li>
+                </ol>
+                <a class="bottom" href="budget.html">You can use our free tool to create your first budget
+                    by clicking here!
+                </a>
+                
+        </div>
+        <div class="secondColIndex">
+                
+                <figure>
+                    <img src="images/budgeting.png" alt="Shows the importance of budgeting" loading="lazy">
+                    <figcaption>Courtesy of 
+                        <a href="https://www.geeksforgeeks.org/finance/budgeting-purpose-importance-types-process-strategy/">
+                            Geeks for Geeks</a>
+                    </figcaption>
+                </figure>
+                     <form action="confirmed.html">
+                        <h4>Subscribe Now!</h4>
+                        <p>The Razor's Edge Budgeting Education newsletter provides you with weekly
+                            tips and new budgeting techniques!
+                        </p>
+                        <h5 class="index">How would you like to receive your newsletter?</h5>
+                        <p class="red">Items in red are required!</p>
+                        <div class="group">
+
+                            <label class="wrapper" for="email">Email
+                                <input class="hidden" type="checkbox" id="email" name="format">
+                                <span class="newCheckbox"></span>
+                            </label>
+                            <label class="wrapper" for="text">Text
+                                    <input class="hidden" type="checkbox" id="text" name="format">
+                                    <span class="newCheckbox"></span>
+                            </label>
+                        </div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter First Name Here" required>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter Last Name Here" required>
+                        <label for="inputEmail">Email Address</label>
+                        <input type="email" id="inputEmail" name="email" placeholder="yourName@RazorsEdge.com">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="555-123-4567">
+                    </form>
+                    <figure class="yt-lite" data-id="yxjZ5aWbfcc">
+                        <div class="yt-lite-thumb"></div>
+                        <button class="yt-lite-play" aria-label="Play video"></button>
+                        <figcaption>
+                            Courtesy of <a href="https://www.youtube.com/">YouTube</a>
+                        </figcaption>
+                    </figure>
+                    
+
+        </div>
+                    
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🥋 Joseph Bowen 🥋 Colorado, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
